@@ -13,8 +13,7 @@ const startServer = async () => {
     console.log("MongoDB Connected Successfully ✅");
 
     app.listen(PORT, () => {
-      console.log(`🚀 Server running on http://localhost:${PORT}`);
-      console.log(`🔗 Frontend can now connect via CORS`);
+      console.log(`🚀 Server running on port ${PORT}`);  // Render detects the service running on this port
     });
   } catch (err) {
     console.error("❌ Server start failed:", err.message);
